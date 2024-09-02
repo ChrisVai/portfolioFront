@@ -1,7 +1,6 @@
 :host {
   font-size: 1rem;
   display: flex;
-  background-color: var(--background-dark);
   align-items: center;
   justify-content: space-between;
 }
