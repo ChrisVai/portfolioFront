@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/*Variables globales*/
+:root {
+  /*couleurs principales*/
+  --primary-color-blue: #00d5f9;
+  --primary-color-green: #5ED0BD;
+  --secondary-color-light-pink: #e0c3f4;
+
+  /*couleur du background*/
+  --background-dark: #101a2b;
+
+  /*variables Angular Material*/
+  --mat-app-primary: var(--primary-color-green);
+
+  /*border radius mat-button*/
+  --mdc-outlined-button-container-shape: 1rem;
+
+  /*font-weight*/
+  --mdc-outlined-button-label-text-weight: 200;
+
+  /*padding horizontal*/
+  --mat-outlined-button-horizontal-padding: 1em;
+
+  /*couleur de la bordure*/
+  --mdc-outlined-button-outline-color : var(--primary-color-green);
+
+  /*couleur du texte*/
+  --mdc-outlined-button-label-text-color : var(--mat-app-primary);
+}
+
