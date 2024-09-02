@@ -2,16 +2,16 @@ button {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 1rem;
   font-weight: 200;
-  border: solid 1px var(--primary-color-green);
+  border: solid 1px var(--primary-color-mid-copper);
   border-radius: 1em;
   padding: 0.5em 1em;
-  background: var(--background-dark);
-  color: var(--primary-color-green);
+  background: transparent;
+  color: var(--primary-color-mid-copper);
 
   &:hover {
-    font-weight: 600;
-    box-shadow: 0 0 5px var(--primary-color-green),
-                inset 0 0 5px var(--primary-color-green);
+    box-shadow: 0 0 5px var(--primary-color-light-copper),
+                inset 0 0 5px var(--primary-color-light-copper);
+    transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
   }
 }
