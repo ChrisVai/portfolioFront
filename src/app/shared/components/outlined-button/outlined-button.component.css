@@ -1,0 +1,17 @@
+button {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  border: solid 1px var(--primary-color-green);
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  background: var(--background-dark);
+  color: var(--primary-color-green);
+
+  &:hover {
+    font-weight: 600;
+    box-shadow: 0 0 5px var(--primary-color-green),
+                inset 0 0 5px var(--primary-color-green);
+    cursor: pointer;
+  }
+}
