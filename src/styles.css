@@ -1,32 +1,22 @@
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  /*background-image: url("../public/BackgroundTiny.jpeg");*/
+  background: var(--background-gradient);
+}
+
 
 /*Variables globales*/
 :root {
-  /*couleurs principales*/
-  --primary-color-blue: #00d5f9;
-  --primary-color-green: #5ED0BD;
-  --secondary-color-light-pink: #e0c3f4;
+
+  /*palette couleurs*/
+  --primary-color-light-copper: #E3B4AF;
+  --primary-color-mid-copper: #906866;
+  --primary-color-dark-copper: #4F2F29;
 
   /*couleur du background*/
-  --background-dark: #101a2b;
-
-  /*variables Angular Material*/
-  --mat-app-primary: var(--primary-color-green);
-
-  /*border radius mat-button*/
-  --mdc-outlined-button-container-shape: 1rem;
-
-  /*font-weight*/
-  --mdc-outlined-button-label-text-weight: 200;
-
-  /*padding horizontal*/
-  --mat-outlined-button-horizontal-padding: 1em;
-
-  /*couleur de la bordure*/
-  --mdc-outlined-button-outline-color : var(--primary-color-green);
-
-  /*couleur du texte*/
-  --mdc-outlined-button-label-text-color : var(--mat-app-primary);
+  --background-dark: #1D232B;
+  --background-gradient: linear-gradient(0.25turn,#010005, #1D232B);
 }
 
