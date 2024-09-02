@@ -1,0 +1,21 @@
+:host {
+  font-size: 1rem;
+  display: flex;
+  background-color: var(--background-dark);
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.mat-mdc-outlined-button {
+  padding: calc(var(--mdc-outlined-button-container-shape)/2) var(--mdc-outlined-button-container-shape);
+  &:hover {
+
+  }
+}

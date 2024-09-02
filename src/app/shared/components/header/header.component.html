@@ -1,0 +1,7 @@
+<img ngSrc="CBLogoTiny.png" height="78" width="79" alt="Logo">
+<nav>
+  @for (content of btnContent; track content; let i = $index) {
+    <app-outlined-button [content]=btnContent[i]></app-outlined-button>
+  }
+</nav>
+<app-outlined-button [content]="test"></app-outlined-button>
