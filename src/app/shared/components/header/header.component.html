@@ -1,7 +1,9 @@
-<img ngSrc="CBLogoGeometricTiny.png" alt="logo" height="100" width="100">
+<button routerLink="">
+  <img ngSrc="CBLogoGeometricTiny.png" alt="logo" height="100" width="100">
+</button>
 <nav>
   @for (content of btnContent; track content; let i = $index) {
-    <app-outlined-button [content]=btnContent[i]></app-outlined-button>
+    <app-outlined-button [title]=btnContent[i].title [path]=btnContent[i].path></app-outlined-button>
   }
 </nav>
-<app-outlined-button [content]="test"></app-outlined-button>
+<app-outlined-button [title]="test"></app-outlined-button>
