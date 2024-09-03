@@ -3,6 +3,6 @@ import {AboutMeComponent} from "./features/aboutMe/components/about-me/about-me.
 import {HomeComponent} from "./features/home/components/home/home.component";
 
 export const routes: Routes = [
-  {path: '', component: HomeComponent, pathMatch: "full"},
-  {path: 'aboutme', component: AboutMeComponent, pathMatch: "full"}
+  {path: '', component: HomeComponent},
+  {path: 'about', component: AboutMeComponent, pathMatch:"full"},
 ];
