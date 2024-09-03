@@ -1,11 +1,13 @@
-html, body { height: 100%; }
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   /*background-image: url("../public/BackgroundTiny.jpeg");*/
   background: var(--background-gradient);
 }
-
 
 /*Variables globales*/
 :root {
@@ -14,6 +16,7 @@ body {
   --primary-color-light-copper: #E3B4AF;
   --primary-color-mid-copper: #906866;
   --primary-color-dark-copper: #4F2F29;
+  --font-color-light: #B5BEBF;
 
   /*couleur du background*/
   --background-dark: #1D232B;

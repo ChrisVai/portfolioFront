@@ -1,0 +1,30 @@
+:host {
+  font-size: 1rem;
+  color: var(--font-color-light);
+  display: flex;
+  margin-left: 5%;
+}
+
+.wrapper {
+  margin-left: 20%;
+  opacity: 0.5;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstName {
+  font-size: 10em;
+  margin-bottom: 0;
+}
+
+.description {
+    font-size: 5em;
+    margin-top: 0.5em;
+}
+
