@@ -4,6 +4,7 @@ import {MatAnchor, MatButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
 import {MatButtonToggle} from "@angular/material/button-toggle";
 import {OutlinedButtonComponent} from "../outlined-button/outlined-button.component";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -14,16 +15,26 @@ import {OutlinedButtonComponent} from "../outlined-button/outlined-button.compon
     MatAnchor,
     MatIcon,
     MatButtonToggle,
-    OutlinedButtonComponent
+    OutlinedButtonComponent,
+    RouterLink
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
   test: string ="test";
-  btnContent: string[] = [
-    "A propos",
-    "Expériences",
-    "Contact",
+  btnContent = [
+    {
+      title: "A propos",
+      path: "about"
+    },
+    {
+      title: "Projets",
+      path: "projects"
+    },
+    {
+      title: "Contact",
+      path: "contact"
+    }
   ]
 }

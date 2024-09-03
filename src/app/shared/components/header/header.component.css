@@ -12,9 +12,7 @@ nav {
   gap: 2em;
 }
 
-.mat-mdc-outlined-button {
-  padding: calc(var(--mdc-outlined-button-container-shape)/2) var(--mdc-outlined-button-container-shape);
-  &:hover {
-
-  }
+button {
+  all: unset;
+  cursor: pointer;
 }
