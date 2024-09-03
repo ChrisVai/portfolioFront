@@ -14,17 +14,17 @@
 
 .text {
   position: absolute;
+  top: 30%;
   display: flex;
   flex-direction: column;
+  gap: 8em;
 }
 
 .firstName {
   font-size: 10em;
-  margin-bottom: 0;
 }
 
 .description {
     font-size: 5em;
-    margin-top: 0.5em;
 }
 
