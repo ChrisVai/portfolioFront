@@ -1,11 +1,13 @@
-html, body { height: 100%; }
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   /*background-image: url("../public/BackgroundTiny.jpeg");*/
   background: var(--background-gradient);
 }
-
 
 /*Variables globales*/
 :root {

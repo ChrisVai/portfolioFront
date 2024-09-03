@@ -2,14 +2,20 @@
   font-size: 1rem;
   color: var(--font-color-light);
   display: flex;
+  margin-left: 5%;
 }
 
-img {
-  position: absolute;
-  left: 450px;
+.wrapper {
+  margin-left: 20%;
   opacity: 0.5;
   z-index: 0;
   overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 
 .firstName {
