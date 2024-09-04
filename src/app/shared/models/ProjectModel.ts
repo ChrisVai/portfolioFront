@@ -1,6 +1,7 @@
 export interface ProjectModel {
   imgUrl?: string[];
   name: string;
-  description: string;
+  shortDescription: string;
+  fullDescription: string;
   technologies: string[];
 }
