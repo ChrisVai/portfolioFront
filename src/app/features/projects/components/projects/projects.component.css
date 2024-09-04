@@ -1,0 +1,13 @@
+:host {
+  font-size: 1rem;
+  color: var(--font-color-light);
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+}
+
+mat-tab-group {
+  margin-top: 2em;
+  width: 70%;
+  align-self: center;
+}
