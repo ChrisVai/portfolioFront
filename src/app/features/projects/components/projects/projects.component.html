@@ -4,17 +4,20 @@
 </div>
 
 <mat-tab-group>
-  <mat-tab [label]="projects[0].name">
-    <app-project-card
-      [imgUrl]="projects[0].imgUrl"
-      [name]="projects[0].name"
-      [shortDescription]="projects[0].shortDescription"
-      [fullDescription]="projects[0].fullDescription"
-      [frontTechno]="projects[0].frontTechno"
-      [backTechno]="projects[0].backTechno"
-      [BDDTechno]="projects[0].bddTechno"
-    />
-  </mat-tab>
+  @for(project of projects; track project.name; let i = $index) {
+    <mat-tab [label]="projects[i].name">
+      <app-project-card
+        [imgUrl]="projects[i].imgUrl"
+        [name]="projects[i].name"
+        [shortDescription]="projects[i].shortDescription"
+        [fullDescription]="projects[i].fullDescription"
+        [frontTechno]="projects[i].frontTechno"
+        [backTechno]="projects[i].backTechno"
+        [BDDTechno]="projects[i].bddTechno"
+      />
+    </mat-tab>
+  }
+
   <mat-tab label="Second"> Content 2 </mat-tab>
   <mat-tab label="Third"> Content 3 </mat-tab>
 </mat-tab-group>
