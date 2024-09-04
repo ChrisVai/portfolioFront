@@ -3,5 +3,7 @@ export interface ProjectModel {
   name: string;
   shortDescription: string;
   fullDescription: string;
-  technologies: string[];
+  frontTechno?: string[];
+  backTechno?: string[];
+  bddTechno?: string[];
 }
