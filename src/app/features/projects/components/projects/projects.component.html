@@ -4,16 +4,14 @@
 </div>
 
 <mat-tab-group>
-  @for(project of projects; track project.name; let i = $index) {
-    <mat-tab [label]="projects[i].name">
+  @for(project of projects; track project.name) {
+    <mat-tab [label]="project.name">
       <app-project-card
-        [imgUrl]="projects[i].imgUrl"
-        [name]="projects[i].name"
-        [shortDescription]="projects[i].shortDescription"
-        [fullDescription]="projects[i].fullDescription"
-        [frontTechno]="projects[i].frontTechno"
-        [backTechno]="projects[i].backTechno"
-        [BDDTechno]="projects[i].bddTechno"
+        [imgUrl]="project.imgUrl"
+        [name]="project.name"
+        [shortDescription]="project.shortDescription"
+        [fullDescription]="project.fullDescription"
+        [technologies]="project.technologies"
       />
     </mat-tab>
   }
