@@ -1,0 +1,34 @@
+:host {
+  font-size: 1rem;
+  margin-top: 2em;
+  background: var(--background-gradient);
+  border: solid 1px var(--primary-color-mid-copper);
+  border-radius: 2em;
+  padding: 2em;
+  color: var(--font-color-light);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.imgContainer {
+  width: 15em;
+  display: flex;
+  justify-content: center;
+  background: var(--background-dark);
+  position: relative;
+  overflow: hidden;
+  padding: 1em;
+  border-radius: 2em;
+}
+
+img {
+  object-fit: cover;
+}
