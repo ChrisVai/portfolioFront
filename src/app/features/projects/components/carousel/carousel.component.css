@@ -5,22 +5,33 @@
 }
 
 .imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2em;
   height: 40em;
   max-height: 40em;
+  background: #1D232B;
+  padding: 2em;
 }
 
 img {
+  position :relative !important;
   object-fit: contain;
-  position: relative !important;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .navButtons {
+  margin-top: 2em;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 button {
-  margin-top: 2em;
   position: relative;
   color: var(--primary-color-mid-copper);
   background: none;
@@ -34,8 +45,23 @@ button {
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
   }
+
+  &:disabled {
+    color: var(--primary-color-dark-copper);
+    border: solid 1px var(--primary-color-dark-copper);
+    cursor: default;
+  }
 }
 
 .mat-icon {
   display: flex;
+}
+
+div {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--primary-color-mid-copper);
+  &.isSelected {
+    color: var(--primary-color-light-copper);
+  }
 }
