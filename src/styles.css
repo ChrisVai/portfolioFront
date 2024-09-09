@@ -20,5 +20,30 @@ body {
   /*couleur du background*/
   --background-dark: #1D232B;
   --background-gradient: linear-gradient(0.25turn,#010005, #1D232B);
+
+  /*Angular material*/
+
+  /*Mat-tab*/
+
+    /**header
+      /*Couleur police label header*/
+      --mat-tab-header-active-label-text-color: var(--primary-color-mid-copper);
+      --mat-tab-header-inactive-label-text-color: var(--primary-color-mid-copper);
+      --mat-tab-header-active-focus-label-text-color: var(--primary-color-light-copper);
+      --mat-tab-header-inactive-hover-label-text-color: var(--primary-color-light-copper);
+      /*Taille police label header*/
+      --mat-tab-header-label-text-size: 1rem;
+      /*Icone de pagination*/
+      --mat-tab-header-pagination-icon-color : var(--primary-color-mid-copper);
+      /*divider*/
+      --mat-tab-header-divider-color : var(--primary-color-mid-copper);
+      /*stepper*/
+      --mat-stepper-header-selected-state-icon-background-color: var(--primary-color-light-copper);
+      /*Indicator*/
+      --mat-tab-header-active-focus-indicator-color: var(--primary-color-mid-copper);
+      --mat-tab-header-active-hover-indicator-color: var(--primary-color-mid-copper);
+      --mdc-tab-indicator-active-indicator-color: var(--primary-color-mid-copper);
+      --mdc-tab-indicator-active-indicator-height: 0.2rem;
+      --mdc-tab-indicator-active-indicator-shape: 5px;
 }
 

@@ -1,0 +1,18 @@
+:host {
+  font-size: 1rem;
+  color: var(--font-color-light);
+  display: flex;
+  flex-direction: column;
+  margin: auto 2%;
+}
+
+mat-tab-group {
+  margin: 2em auto;
+  width: 70%;
+  align-self: center;
+}
+
+img {
+  position: absolute;
+  opacity: 0.5;
+}
