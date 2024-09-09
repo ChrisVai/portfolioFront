@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {MatTab, MatTabGroup} from "@angular/material/tabs";
 import {ProjectModel} from "../../../../shared/models/ProjectModel";
 import {ProjectCardComponent} from "../project-card/project-card.component";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-projects',
@@ -9,7 +10,8 @@ import {ProjectCardComponent} from "../project-card/project-card.component";
   imports: [
     MatTab,
     MatTabGroup,
-    ProjectCardComponent
+    ProjectCardComponent,
+    NgOptimizedImage
   ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'

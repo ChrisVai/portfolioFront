@@ -50,7 +50,7 @@ button {
     color: var(--primary-color-dark-copper);
     border: solid 1px var(--primary-color-dark-copper);
     cursor: default;
-    
+
     &:hover {
       box-shadow: none;
     }
