@@ -3,11 +3,11 @@
   color: var(--font-color-light);
   display: flex;
   flex-direction: column;
-  margin-right: 5%;
+  margin: auto 2%;
 }
 
 mat-tab-group {
-  margin-top: 2em;
+  margin: 2em auto;
   width: 70%;
   align-self: center;
 }
