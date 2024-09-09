@@ -7,7 +7,7 @@
   @for(project of projects; track project.name) {
     <mat-tab [label]="project.name">
       <app-project-card
-        [imgUrl]="project.imgUrl"
+        [imgUrl]="project.imgUrl!"
         [name]="project.name"
         [shortDescription]="project.shortDescription"
         [fullDescription]="project.fullDescription"

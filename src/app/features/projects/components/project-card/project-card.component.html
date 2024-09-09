@@ -2,11 +2,7 @@
 <h3>{{shortDescription}}</h3>
 <br>
 <div class="gallery">
-  @for(img of imgUrl; track img) {
-    <div class="imgContainer">
-      <img [ngSrc]="img" fill alt="capture d'écran projet" priority>
-    </div>
-  }
+  <app-carousel [imgUrl]="imgUrl"></app-carousel>
 </div>
 <br>
 <h4>A propos</h4>

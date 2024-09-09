@@ -1,1 +1,12 @@
-<p>carousel works!</p>
+<div class="imgContainer">
+  <img [ngSrc]="imgUrl[index]" fill alt="Capture d'écran" priority>
+</div>
+<div class="navButtons">
+  <button class="leftBtn" (click)="prevPicture()">
+    <mat-icon fontIcon="chevron_left"></mat-icon>
+  </button>
+  <button class="rightBtn" (click)="nextPicture()">
+    <mat-icon fontIcon="chevron_right"></mat-icon>
+  </button>
+</div>
+

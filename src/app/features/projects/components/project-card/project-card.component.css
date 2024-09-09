@@ -13,20 +13,7 @@
 
 .gallery {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 500px;
-}
-
-.imgContainer {
-  width: 15em;
-  display: flex;
   justify-content: center;
-  background: var(--background-dark);
-  position: relative;
-  overflow: hidden;
-  padding: 1em;
-  border-radius: 2em;
 }
 
 img {

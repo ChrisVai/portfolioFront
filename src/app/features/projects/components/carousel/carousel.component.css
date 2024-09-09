@@ -1,0 +1,41 @@
+:host {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+.imgContainer {
+  height: 40em;
+  max-height: 40em;
+}
+
+img {
+  object-fit: contain;
+  position: relative !important;
+}
+
+.navButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  margin-top: 2em;
+  position: relative;
+  color: var(--primary-color-mid-copper);
+  background: none;
+  border: solid 1px var(--primary-color-mid-copper);
+  border-radius: 1em;
+  padding: 0.5em;
+
+  &:hover {
+    box-shadow: 0 0 5px var(--primary-color-light-copper),
+    inset 0 0 5px var(--primary-color-light-copper);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+}
+
+.mat-icon {
+  display: flex;
+}
