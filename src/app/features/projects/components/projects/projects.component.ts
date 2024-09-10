@@ -28,4 +28,5 @@ export class ProjectsComponent {
   }
 
   projects: ProjectModel[] = [this.yushoot]
+  protected readonly PluginArray = PluginArray;
 }
