@@ -19,3 +19,13 @@
 img {
   object-fit: cover;
 }
+
+div {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    height: 3em;
+    width: auto;
+  }
+}
