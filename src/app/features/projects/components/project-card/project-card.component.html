@@ -1,4 +1,11 @@
-<h2>{{project.name}}</h2>
+<div>
+  <h2>{{project.name}}</h2>
+  @if(project.gitHubUrl) {
+    <a [href]="project.gitHubUrl" target="_blank">
+      <img src="github-mark-white.svg" alt="gitHub Logo" >
+    </a>
+  }
+</div>
 <h3>{{project.shortDescription}}</h3>
 <br>
 @if (project.imgUrl) {
@@ -13,10 +20,6 @@
 <br>
 <h4>Technologies</h4>
 <br>
-@if(project.gitHubUrl) {
-  <h4>GitHub</h4>
-  <a>{{project.gitHubUrl}}</a>
-}
 <mat-chip-set>
   @for(technology of project.technologies; track technology) {
     <mat-chip>{{technology}}</mat-chip>

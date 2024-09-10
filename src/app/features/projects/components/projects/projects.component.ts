@@ -25,6 +25,7 @@ export class ProjectsComponent {
     fullDescription: "Refonte complète en mobile First de la page Profil Photographe du site Yushoot.fr. Amélioration de l'UX/UI." +
       "Création d'Endpoint.",
     technologies: ["Angular 17", "TypeScript", "SaSS & SCSS", "GraphQL / Apollo","NodeJs", "Express", "GraphQL","MongoDB", "Docker"],
+    gitHubUrl: "https://www.google.com"
   }
 
   projects: ProjectModel[] = [this.yushoot]
