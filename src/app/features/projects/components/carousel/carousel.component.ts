@@ -1,7 +1,10 @@
-import {Component, Input} from '@angular/core';
+import {Component, inject, Input} from '@angular/core';
 import {NgClass, NgOptimizedImage} from "@angular/common";
 import {MatIcon} from "@angular/material/icon";
 import {OutlinedButtonComponent} from "../../../../shared/components/outlined-button/outlined-button.component";
+import {MatDialog} from "@angular/material/dialog";
+import {FullscreenDialogComponent} from "../fullscreen-dialog/fullscreen-dialog.component";
+import {MatTooltip} from "@angular/material/tooltip";
 
 @Component({
   selector: 'app-carousel',
@@ -11,15 +14,23 @@ import {OutlinedButtonComponent} from "../../../../shared/components/outlined-bu
     MatIcon,
     OutlinedButtonComponent,
     NgClass,
+    MatTooltip,
   ],
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.css'
 })
 export class CarouselComponent {
   @Input({required: true}) imgUrl!: string[];
+  dialog: MatDialog = inject(MatDialog);
   index: number = 0;
 
-
+openDialog(imgUrl: string) {
+  this.dialog.open(FullscreenDialogComponent, {
+    data: {
+      img: imgUrl,
+    },
+  });
+}
   nextPicture() {
     if(this.index < this.imgUrl.length -1) {
       this.index ++;

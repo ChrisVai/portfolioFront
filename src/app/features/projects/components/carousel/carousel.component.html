@@ -1,6 +1,11 @@
-<div class="imgContainer">
-  <img [ngSrc]="imgUrl[index]" fill alt="Capture d'écran" priority>
-</div>
+<button class="toFullscreen"
+        matTooltip="Agrandir"
+        [matTooltipPositionAtOrigin]=true
+        (click)="openDialog(imgUrl[index])">
+  <div class="imgContainer">
+    <img [ngSrc]="imgUrl[index]" fill alt="Capture d'écran" priority>
+  </div>
+</button>
 <div class="navButtons">
   <button [disabled]="isFirst()" (click)="prevPicture()">
     <mat-icon fontIcon="chevron_left"></mat-icon>

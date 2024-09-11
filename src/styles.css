@@ -46,5 +46,9 @@ body {
       --mdc-tab-indicator-active-indicator-color: var(--primary-color-mid-copper);
       --mdc-tab-indicator-active-indicator-height: 0.2rem;
       --mdc-tab-indicator-active-indicator-shape: 5px;
+
+  /*Mat-dialog*/
+
+    --mat-dialog-container-max-width: 90vw;
 }
 
