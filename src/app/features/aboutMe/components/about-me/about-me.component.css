@@ -12,11 +12,14 @@ p {
   position: absolute;
   left: 25%;
   top: 30%;
-  width: 70%
+  width: 70%;
+  z-index: 1;
 }
 
 img {
-  position: absolute;
+  object-fit: cover;
+  position: relative;
   right: 40%;
-  opacity: 0.5;
+  opacity: 0.2;
+  overflow: hidden;
 }
