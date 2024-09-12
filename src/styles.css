@@ -33,7 +33,7 @@ body {
       --mat-tab-header-active-focus-label-text-color: var(--primary-color-light-copper);
       --mat-tab-header-inactive-hover-label-text-color: var(--primary-color-light-copper);
       /*Taille police label header*/
-      --mat-tab-header-label-text-size: 1rem;
+      --mat-tab-header-label-text-size: 1.5rem;
       /*Icone de pagination*/
       --mat-tab-header-pagination-icon-color : var(--primary-color-mid-copper);
       /*divider*/
@@ -50,5 +50,8 @@ body {
   /*Mat-dialog*/
 
     --mat-dialog-container-max-width: 90vw;
+
+  /*Mat-chip*/
+  --mdc-chip-label-text-color : var(--primary-color-light-copper);
 }
 

@@ -32,6 +32,10 @@ img {
   justify-content: space-evenly;
   align-items: center;
 
+  .selectPictureBtn {
+    border: none;
+  }
+
   button {
     position: relative;
     color: var(--primary-color-mid-copper);
