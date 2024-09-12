@@ -32,9 +32,9 @@ export class HeaderComponent {
       title: "Projets",
       path: "projects"
     },
-    {
-      title: "Contact",
-      path: "contact"
-    }
   ]
+
+  download() {
+    window.open("CV/Christophe Bellet 2024 v1.8.pdf")
+  }
 }

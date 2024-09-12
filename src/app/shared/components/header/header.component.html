@@ -5,5 +5,17 @@
   @for (content of btnContent; track content; let i = $index) {
     <app-outlined-button [title]=btnContent[i].title [path]=btnContent[i].path></app-outlined-button>
   }
+    <app-outlined-button title="CV" (click)="download()"></app-outlined-button>
 </nav>
-<app-outlined-button [title]="test"></app-outlined-button>
+<div class="links">
+  <a href="https://github.com/ChrisVai" target="_blank">
+    <img ngSrc="github-mark-white.svg" height="34" width="34" alt="logo GitHub Cat">
+  </a>
+  <a href="https://www.linkedin.com/in/christophe-bellet" target="_blank">
+    <img ngSrc="In-White-34.png" height="34" width="34" alt="logo LinkedIn">
+  </a>
+  <a href="mailto:chrisbellet@gmail.com">
+    <mat-icon fontIcon="mail"></mat-icon>
+  </a>
+</div>
+
