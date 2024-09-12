@@ -29,3 +29,7 @@ div {
     width: auto;
   }
 }
+
+mat-chip-set {
+  align-self: center;
+}
