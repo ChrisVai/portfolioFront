@@ -5,6 +5,7 @@ import {MatIcon} from "@angular/material/icon";
 import {MatButtonToggle} from "@angular/material/button-toggle";
 import {OutlinedButtonComponent} from "../outlined-button/outlined-button.component";
 import {RouterLink} from "@angular/router";
+import {ButtonContentModel} from "../../models/buttonContentModel";
 
 @Component({
   selector: 'app-header',
@@ -22,8 +23,7 @@ import {RouterLink} from "@angular/router";
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  test: string ="test";
-  btnContent = [
+  btnContent: ButtonContentModel[] = [
     {
       title: "A propos",
       path: "about"
