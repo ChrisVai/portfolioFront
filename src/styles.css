@@ -11,6 +11,9 @@ body {
 /*Variables globales*/
 :root {
 
+  /*Définitions d'écrans*/
+  --max-xs: 599px;
+
   /*palette couleurs*/
   --primary-color-light-copper: #E3B4AF;
   --primary-color-mid-copper: #906866;
@@ -52,6 +55,14 @@ body {
     --mat-dialog-container-max-width: 90vw;
 
   /*Mat-chip*/
-  --mdc-chip-label-text-color : var(--primary-color-light-copper);
+    --mdc-chip-label-text-color : var(--primary-color-light-copper);
+
+  /*Mat-button*/
+  --mdc-text-button-label-text-color: var(--primary-color-light-copper);
+
+  /*Mat-menu*/
+  --mat-menu-container-color: var(--background-dark);
+  --mat-menu-item-label-text-color: var(--primary-color-light-copper);
+  --mat-menu-container-shape: 1rem;
 }
 
