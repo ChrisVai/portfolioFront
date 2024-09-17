@@ -1,0 +1,24 @@
+<button class="toFullscreen"
+        matTooltip="Agrandir"
+        [matTooltipPositionAtOrigin]=true
+        [matTooltipShowDelay]="800"
+        (click)="openDialog(imgUrl[index])">
+  <div class="imgContainer">
+    <img [ngSrc]="imgUrl[index]" fill alt="Capture d'écran" priority>
+  </div>
+</button>
+<div class="navButtons">
+  <button [disabled]="isFirst()" (click)="prevPicture()">
+    <mat-icon fontIcon="chevron_left"></mat-icon>
+  </button>
+  @for(url of imgUrl; track url; let i= $index) {
+    <button class="selectPictureBtn"
+    (click)="index = i">
+      <div [ngClass]="{'isSelected': isSelected(i)}"><mat-icon fontIcon="image"/></div>
+    </button>
+  }
+  <button [disabled]="isLast()" (click)="nextPicture()">
+    <mat-icon fontIcon="chevron_right"></mat-icon>
+  </button>
+</div>
+

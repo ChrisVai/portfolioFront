@@ -1,0 +1,32 @@
+:host {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  --mat-icon-color: white;
+  padding-right: 1.5em;
+}
+
+.links {
+  display: flex;
+  gap: 2em;
+}
+
+mat-icon {
+  width: auto;
+  height: auto;
+  font-size: 25px;
+}
+
+.logoButton {
+  all: unset;
+}
+
+.mdc-button {
+  outline: 1px solid;
+  background: transparent;
+}
+
+.mat-mdc-menu-panel {
+  min-width: 200px;
+}

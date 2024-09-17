@@ -1,0 +1,12 @@
+<h1>Projets</h1>
+<h3>Mes dernières réalisations</h3>
+<mat-tab-group>
+  @for(project of projects; track project.name) {
+    <mat-tab [label]="project.name">
+      <app-project-card
+        [project]="project"
+      />
+    </mat-tab>
+  }
+</mat-tab-group>
+<img ngSrc="origamyTiny.png" height="1024" width="1792" alt="geometric circles and squares">

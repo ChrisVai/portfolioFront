@@ -3,6 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-right: 2em;
+  --mat-icon-color: white;
 }
 
 nav {
@@ -12,9 +14,20 @@ nav {
   gap: 2em;
 }
 
-.mat-mdc-outlined-button {
-  padding: calc(var(--mdc-outlined-button-container-shape)/2) var(--mdc-outlined-button-container-shape);
-  &:hover {
+button {
+  all: unset;
+  cursor: pointer;
+}
 
-  }
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+mat-icon {
+  width: auto;
+  height: auto;
+  font-size: 40px;
 }

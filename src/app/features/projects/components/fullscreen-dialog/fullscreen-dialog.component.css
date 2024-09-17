@@ -1,0 +1,20 @@
+.mat-mdc-dialog-content {
+  max-height: 90vh;
+}
+
+img {
+  position: relative !important;
+}
+
+button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  border: solid 2px var(--primary-color-mid-copper);
+  border-radius: 2em;
+  color: var(--primary-color-mid-copper);
+}

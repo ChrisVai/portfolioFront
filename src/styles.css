@@ -11,6 +11,9 @@ body {
 /*Variables globales*/
 :root {
 
+  /*Définitions d'écrans*/
+  --max-xs: 599px;
+
   /*palette couleurs*/
   --primary-color-light-copper: #E3B4AF;
   --primary-color-mid-copper: #906866;
@@ -21,5 +24,45 @@ body {
   /*couleur du background*/
   --background-dark: #1D232B;
   --background-gradient: linear-gradient(0.25turn,#010005, #1D232B);
+
+  /*Angular material*/
+
+  /*Mat-tab*/
+
+    /**header
+      /*Couleur police label header*/
+      --mat-tab-header-active-label-text-color: var(--primary-color-mid-copper);
+      --mat-tab-header-inactive-label-text-color: var(--primary-color-mid-copper);
+      --mat-tab-header-active-focus-label-text-color: var(--primary-color-light-copper);
+      --mat-tab-header-inactive-hover-label-text-color: var(--primary-color-light-copper);
+      /*Taille police label header*/
+      --mat-tab-header-label-text-size: 1.5rem;
+      /*Icone de pagination*/
+      --mat-tab-header-pagination-icon-color : var(--primary-color-mid-copper);
+      /*divider*/
+      --mat-tab-header-divider-color : var(--primary-color-mid-copper);
+      /*stepper*/
+      --mat-stepper-header-selected-state-icon-background-color: var(--primary-color-light-copper);
+      /*Indicator*/
+      --mat-tab-header-active-focus-indicator-color: var(--primary-color-mid-copper);
+      --mat-tab-header-active-hover-indicator-color: var(--primary-color-mid-copper);
+      --mdc-tab-indicator-active-indicator-color: var(--primary-color-mid-copper);
+      --mdc-tab-indicator-active-indicator-height: 0.2rem;
+      --mdc-tab-indicator-active-indicator-shape: 5px;
+
+  /*Mat-dialog*/
+
+    --mat-dialog-container-max-width: 90vw;
+
+  /*Mat-chip*/
+    --mdc-chip-label-text-color : var(--primary-color-light-copper);
+
+  /*Mat-button*/
+  --mdc-text-button-label-text-color: var(--primary-color-light-copper);
+
+  /*Mat-menu*/
+  --mat-menu-container-color: var(--background-dark);
+  --mat-menu-item-label-text-color: var(--primary-color-light-copper);
+  --mat-menu-container-shape: 1rem;
 }
 

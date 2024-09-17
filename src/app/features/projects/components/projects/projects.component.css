@@ -1,0 +1,25 @@
+:host {
+  font-size: 1rem;
+  color: var(--font-color-light);
+  display: flex;
+  flex-direction: column;
+  margin: auto 2%;
+}
+
+mat-tab-group {
+  margin: 2em auto;
+  width: 90%;
+  align-self: center;
+}
+
+img {
+  position: absolute;
+  opacity: 0.5;
+}
+
+h1, h3 {
+  background: var(--copper-linear-gradient);
+  background-size: 30%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
