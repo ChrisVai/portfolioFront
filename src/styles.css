@@ -5,7 +5,6 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  /*background-image: url("../public/BackgroundTiny.jpeg");*/
   background: var(--background-gradient);
 }
 
@@ -17,6 +16,7 @@ body {
   --primary-color-mid-copper: #906866;
   --primary-color-dark-copper: #4F2F29;
   --font-color-light: #B5BEBF;
+  --copper-linear-gradient: linear-gradient(45deg, #E3B4AF, #906866, #4F2F29);
 
   /*couleur du background*/
   --background-dark: #1D232B;
