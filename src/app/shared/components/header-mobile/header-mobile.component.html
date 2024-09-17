@@ -1,0 +1,22 @@
+<button class="logoButton" routerLink="">
+  <img ngSrc="CLogoTiny.png" alt="logo" height="80" width="80">
+</button>
+<div class="links">
+  <a href="https://github.com/ChrisVai" target="_blank">
+    <img ngSrc="github-mark-white.svg" height="25" width="25" alt="logo GitHub Cat">
+  </a>
+  <a href="https://www.linkedin.com/in/christophe-bellet" target="_blank">
+    <img ngSrc="In-White-34.png" height="25" width="25" alt="logo LinkedIn">
+  </a>
+  <a href="mailto:chrisbellet@gmail.com">
+    <mat-icon fontIcon="mail"></mat-icon>
+  </a>
+</div>
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  @for(btnContent of btnContent; track btnContent) {
+    <button mat-menu-item [routerLink]="btnContent.path">{{btnContent.title}}</button>
+  }
+  <button mat-menu-item (click)="downloadCV()" >CV</button>
+</mat-menu>
+
