@@ -7,21 +7,17 @@ img {
   object-fit: cover;
   opacity: 0.2;
   overflow: hidden;
-  @media screen and (min-width: 599px) {
-    margin-left: 30%;
-  }
+  mask-repeat: no-repeat;
+  z-index: -1;
 }
 
 span {
-  position: absolute;
-  top: 20%;
   display: flex;
   flex-direction: column;
-  gap: 8em;
-  z-index: 1;
-  margin-left: 5%;
+  gap: 5em;
+  margin: var(--margin-mobile);
   @media screen and (min-width: 599px) {
-    top: 30%;
+    top: calc(var(--margin-mobile)*4);
   }
 }
 
@@ -32,16 +28,15 @@ h1, h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0;
-  z-index: 1;
   word-break: break-word;
-  @media screen and (min-width: 599px) {
-    font-size:7em;
+  @media screen and (min-width: 959px) {
+    font-size: 7em;
   }
 }
 
 h2 {
   font-size: 2em;
-  @media screen and (min-width: 599px) {
+  @media screen and (min-width: 959px) {
     font-size: 4em;
   }
 }
