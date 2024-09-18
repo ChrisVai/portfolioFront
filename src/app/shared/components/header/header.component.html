@@ -1,20 +1,20 @@
 <button routerLink="">
-  <img ngSrc="CLogoTiny.png" alt="logo" height="100" width="100">
+  <img ngSrc="CLogoTiny.png" alt="logo" height="100" width="100" priority>
 </button>
 <nav>
   @for (content of btnContent; track content; let i = $index) {
-    <app-outlined-button [title]=btnContent[i].title [path]=btnContent[i].path></app-outlined-button>
+    <app-outlined-button [content]="btnContent[i]"></app-outlined-button>
   }
-    <app-outlined-button title="CV" (click)="download()"></app-outlined-button>
+    <app-outlined-button [content]="cvContent" (click)="download()"></app-outlined-button>
 </nav>
 <div class="links">
-  <a href="https://github.com/ChrisVai" target="_blank">
+  <a [href]="gitHubUrl" target="_blank">
     <img ngSrc="github-mark-white.svg" height="34" width="34" alt="logo GitHub Cat">
   </a>
-  <a href="https://www.linkedin.com/in/christophe-bellet" target="_blank">
+  <a [href]="linkedInUrl" target="_blank">
     <img ngSrc="In-White-34.png" height="34" width="34" alt="logo LinkedIn">
   </a>
-  <a href="mailto:chrisbellet@gmail.com">
+  <a [href]="mail">
     <mat-icon fontIcon="mail"></mat-icon>
   </a>
 </div>

@@ -25,6 +25,10 @@ import {ButtonContentModel} from "../../models/buttonContentModel";
 export class HeaderComponent {
   btnContent: ButtonContentModel[] = [
     {
+      title: "Accueil",
+      path: ""
+    },
+    {
       title: "A propos",
       path: "about"
     },
@@ -33,6 +37,14 @@ export class HeaderComponent {
       path: "projects"
     },
   ]
+
+  cvContent: ButtonContentModel = {
+    title: "CV"
+  }
+
+  linkedInUrl: string = "https://www.linkedin.com/in/christophe-bellet";
+  gitHubUrl: string = "https://github.com/ChrisVai";
+  mail: string = "mailto:chrisbellet@gmail.com";
 
   download() {
     window.open("CV/Christophe Bellet 2024 v1.8.pdf")

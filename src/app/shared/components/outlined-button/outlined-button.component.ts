@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {RouterLink} from "@angular/router";
+import {ButtonContentModel} from "../../models/buttonContentModel";
 
 @Component({
   selector: 'app-outlined-button',
@@ -11,6 +12,5 @@ import {RouterLink} from "@angular/router";
   styleUrl: './outlined-button.component.css'
 })
 export class OutlinedButtonComponent {
-  @Input({required: true}) title: string = "";
-  @Input() path: string = "";
+  @Input({required: true}) content!: ButtonContentModel;
 }
