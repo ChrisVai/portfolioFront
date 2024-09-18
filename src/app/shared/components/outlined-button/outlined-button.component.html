@@ -1,1 +1,6 @@
-<button [routerLink]="content.path">{{content.title}}</button>
+@if(routerLinkActive) {
+  <button [routerLink]="content.path" routerLinkActive="active-link">{{content.title}}</button>
+} @else {
+  <button [routerLink]="content.path">{{content.title}}</button>
+}
+

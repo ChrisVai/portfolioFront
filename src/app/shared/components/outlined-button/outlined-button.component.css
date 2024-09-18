@@ -14,4 +14,14 @@ button {
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
   }
+
+  .active-link {
+    box-shadow: 0 0 5px var(--primary-color-light-copper),
+    inset 0 0 5px var(--primary-color-light-copper);
+  }
+}
+
+.active-link {
+  box-shadow: 0 0 5px var(--primary-color-light-copper),
+  inset 0 0 5px var(--primary-color-light-copper);
 }

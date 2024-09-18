@@ -3,9 +3,9 @@
 </button>
 <nav>
   @for (content of btnContent; track content; let i = $index) {
-    <app-outlined-button [content]="btnContent[i]"></app-outlined-button>
+    <app-outlined-button [content]="btnContent[i]" [routerLinkActive]="content.routerLinkActive"></app-outlined-button>
   }
-    <app-outlined-button [content]="cvContent" (click)="download()"></app-outlined-button>
+    <app-outlined-button [content]="cvContent" [routerLinkActive]="cvContent.routerLinkActive" (click)="download()"></app-outlined-button>
 </nav>
 <div class="links">
   <a [href]="gitHubUrl" target="_blank">

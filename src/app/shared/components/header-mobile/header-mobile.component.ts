@@ -25,20 +25,24 @@ export class HeaderMobileComponent {
   btnContent: ButtonContentModel[] = [
     {
       title: "Accueil",
-      path: ""
+      path: "",
+      routerLinkActive: false
     },
     {
       title: "A propos",
-      path: "about"
+      path: "about",
+      routerLinkActive: true
     },
     {
       title: "Projets",
-      path: "projects"
+      path: "projects",
+      routerLinkActive: true
     },
   ]
 
   cvContent: ButtonContentModel = {
-    title: "CV"
+    title: "CV",
+    routerLinkActive: false
   }
 
   linkedInUrl: string = "https://www.linkedin.com/in/christophe-bellet";
