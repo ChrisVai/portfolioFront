@@ -11,8 +11,8 @@ body {
 /*Variables globales*/
 :root {
 
-  /*Définitions d'écrans*/
-  --max-xs: 599px;
+  /*Marges mobile*/
+  --margin-mobile: 7%;
 
   /*palette couleurs*/
   --primary-color-light-copper: #E3B4AF;
