@@ -24,6 +24,10 @@ import {ButtonContentModel} from "../../models/buttonContentModel";
 export class HeaderMobileComponent {
   btnContent: ButtonContentModel[] = [
     {
+      title: "Accueil",
+      path: ""
+    },
+    {
       title: "A propos",
       path: "about"
     },

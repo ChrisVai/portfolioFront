@@ -1,36 +1,48 @@
 :host {
   font-size: 1rem;
   display: flex;
-  margin-left: 5%;
 }
 
 img {
   object-fit: cover;
-  margin-left: 20%;
-  opacity: 0.5;
+  opacity: 0.2;
   overflow: hidden;
+  @media screen and (min-width: 599px) {
+    margin-left: 30%;
+  }
 }
 
 span {
   position: absolute;
-  top: 30%;
+  top: 20%;
   display: flex;
   flex-direction: column;
   gap: 8em;
   z-index: 1;
+  margin-left: 5%;
+  @media screen and (min-width: 599px) {
+    top: 30%;
+  }
 }
 
 h1, h2 {
-  font-size: 10em;
+  font-size: 4em;
   line-height: normal;
   background: var(--copper-linear-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0;
   z-index: 1;
+  word-break: break-word;
+  @media screen and (min-width: 599px) {
+    font-size:7em;
+  }
 }
 
 h2 {
-  font-size: 5em;
+  font-size: 2em;
+  @media screen and (min-width: 599px) {
+    font-size: 4em;
+  }
 }
 
