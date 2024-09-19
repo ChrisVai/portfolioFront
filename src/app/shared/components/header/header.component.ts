@@ -26,8 +26,8 @@ export class HeaderComponent {
   btnContent: ButtonContentModel[] = [
     {
       title: "Accueil",
-      path: "",
-      routerLinkActive: false
+      path: "home",
+      routerLinkActive: true
     },
     {
       title: "A propos",
