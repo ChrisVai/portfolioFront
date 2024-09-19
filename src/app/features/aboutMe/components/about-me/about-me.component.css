@@ -22,7 +22,7 @@ p {
   border: 1px solid var(--primary-color-mid-copper);
   border-radius: 2em;
   padding: 1.5em;
-  margin-top: 2em;
+  margin: 2em 0;
   @media screen and (min-width: 599px) {
     font-size: 1.5em;
   }
