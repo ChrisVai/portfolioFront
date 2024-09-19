@@ -8,7 +8,7 @@
   /*Mat-tab*/
   /**header
     /*Couleur police label header*/
-  --mat-tab-header-active-label-text-color: var(--primary-color-mid-copper);
+  --mat-tab-header-active-label-text-color: var(--primary-color-light-copper);
   --mat-tab-header-inactive-label-text-color: var(--primary-color-mid-copper);
   --mat-tab-header-active-focus-label-text-color: var(--primary-color-light-copper);
   --mat-tab-header-inactive-hover-label-text-color: var(--primary-color-light-copper);
