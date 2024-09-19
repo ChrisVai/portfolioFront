@@ -15,7 +15,7 @@ import {ButtonContentModel} from "../../../../shared/models/buttonContentModel";
 })
 export class HomeComponent {
   btnContent: ButtonContentModel = {
-    title: "A Propos de moi",
+    title: "A propos de moi",
     path: "/about",
     routerLinkActive: false
   }

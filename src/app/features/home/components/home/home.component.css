@@ -2,6 +2,7 @@
   font-size: 1rem;
   display: flex;
   flex-direction: column;
+  margin: var(--margin-mobile)
 }
 
 img {
@@ -15,10 +16,12 @@ img {
 span {
   display: flex;
   flex-direction: column;
-  gap: 5em;
-  margin: var(--margin-mobile);
+  gap: 3em;
+  margin-top: calc(var(--margin-mobile)*4);
   @media screen and (min-width: 599px) {
-    top: calc(var(--margin-mobile)*4);
+    gap: 5em;
+    margin-top: 0;
+    margin-bottom: 3%;
   }
 }
 
@@ -44,5 +47,23 @@ h2 {
 
 app-outlined-button {
   align-self: center;
-  margin-top: var(--margin-mobile);
+  margin-top: calc(var(--margin-mobile)*2);
+  @media screen and (min-width: 959px) {
+    margin-top: 0;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  align-items: center;
+  h2 {
+    align-self: flex-start;
+  }
+  @media screen and (min-width: 959px) {
+    app-outlined-button {
+      align-self: flex-start;
+    }
+  }
 }
