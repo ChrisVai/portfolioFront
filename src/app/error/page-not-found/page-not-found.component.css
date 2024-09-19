@@ -1,0 +1,28 @@
+:host{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1rem;
+  margin: var(--margin-mobile);
+}
+
+h1, h2, p {
+  text-align: center;
+  font-size: 5em;
+  line-height: normal;
+  background: var(--copper-linear-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+  word-break: break-word;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 2em;
+}
