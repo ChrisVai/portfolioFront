@@ -47,10 +47,10 @@ img {
   z-index: -1;
 }
 
-h1, h3 {
+h1 {
   font-size: 3em;
   background: var(--copper-linear-gradient);
-
+  margin-bottom: 2em;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
