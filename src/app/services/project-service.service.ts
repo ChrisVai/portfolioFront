@@ -7,7 +7,11 @@ import {ProjectModel} from "../shared/models/ProjectModel";
 export class ProjectService {
 
   private yushoot: ProjectModel = {
-    imgUrl: ["projectAssets/yushoot/yushootDesktop.png", "projectAssets/yushoot/FullPage(iPad Pro).png", "projectAssets/yushoot/FullPageZoom(iPhone 12 Pro).png"],
+    imgUrl: [
+      "projectAssets/yushoot/yushootDesktop.png",
+      "projectAssets/yushoot/FullPage(iPad Pro).png",
+      "projectAssets/yushoot/FullPageZoom(iPhone 12 Pro).png"
+    ],
     name: "Yushoot",
     shortDescription: "Refonte de le page Profil photographe de Yushoot.fr",
     fullDescription: "Refonte complète en mobile First de la page Profil Photographe du site Yushoot.fr. Amélioration de l'UX/UI et optimisation des performances via RxJS et ChangeDetectionStrategy.OnPush.<br>" +
@@ -16,7 +20,10 @@ export class ProjectService {
   }
 
   private projetYuzu: ProjectModel = {
-    imgUrl: ["projectAssets/projetYuzu/projetYuzuHomeTiny.png", "projectAssets/projetYuzu/projetYuzuArticleTiny.png"],
+    imgUrl: [
+      "projectAssets/projetYuzu/projetYuzuHomeTiny.png",
+      "projectAssets/projetYuzu/projetYuzuArticleTiny.png"
+    ],
     name: "projetYuzu",
     shortDescription: "Site d'affichage de news",
     fullDescription: "Création d'un site d'affichage de news sous Angular 17 avec filtres asynchrones pour s'entrainer sur RxJS. <br>Les articles ont été récupérés via une API externe.<br>" +
@@ -26,6 +33,14 @@ export class ProjectService {
   }
 
   private portfolio: ProjectModel = {
+    imgUrl: [
+      "projectAssets/portfolio/portfolioHomeDesktop.png",
+      "projectAssets/portfolio/portfolioAboutDesktop.png",
+      "projectAssets/portfolio/portfolioProjectDesktop.png",
+      "projectAssets/portfolio/portfolioHomeMobile.png",
+      "projectAssets/portfolio/portfolioAboutMobile.png",
+      "projectAssets/portfolio/portfolioProjectsMobile.png"
+    ],
     name: "Porfolio",
     shortDescription: "Mon portfolio",
     fullDescription: "Réalisation de mon portfolio sous Angular 18 afin de continuer la pratique de ce framework et de rendre visible mes travaux passés." +
