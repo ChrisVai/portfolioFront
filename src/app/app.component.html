@@ -1,5 +1,5 @@
 <header>
-  @if(isMobile) {
+  @if(isMobile$ | async) {
     <app-header-mobile/>
   } @else {
     <app-header/>
