@@ -1,6 +1,4 @@
 :host {
-  width: 100%;
-  max-width: 100%;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
@@ -11,19 +9,21 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  position: relative;
   border-radius: 2em;
-  height: 40em;
-  max-height: 40em;
+  width: 70vw;
+  height: 30vh;
   background: #1D232B;
-  padding: 2em;
+  padding: 1em;
+  @media screen and (orientation: landscape) {
+    height: 70vh;
+    padding: 2em;
+  }
 }
 
 img {
   position :relative !important;
   object-fit: contain;
   vertical-align: middle;
-  display: inline-block;
 }
 
 .navButtons {
@@ -44,11 +44,13 @@ img {
     border-radius: 1em;
     padding: 0.5em;
 
-    &:hover {
-      box-shadow: 0 0 5px var(--primary-color-light-copper),
-      inset 0 0 5px var(--primary-color-light-copper);
-      transition: box-shadow 0.3s ease-in-out;
-      cursor: pointer;
+    @media screen and (min-width: 1919px){
+      &:hover {
+        box-shadow: 0 0 5px var(--primary-color-light-copper),
+        inset 0 0 5px var(--primary-color-light-copper);
+        transition: box-shadow 0.3s ease-in-out;
+        cursor: pointer;
+      }
     }
 
     &:disabled {

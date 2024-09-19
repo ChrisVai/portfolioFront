@@ -3,23 +3,54 @@
   color: var(--font-color-light);
   display: flex;
   flex-direction: column;
-  margin: auto 2%;
+  margin: var(--margin-mobile);
+
+  /*Mat-tab*/
+  /**header
+    /*Couleur police label header*/
+  --mat-tab-header-active-label-text-color: var(--primary-color-mid-copper);
+  --mat-tab-header-inactive-label-text-color: var(--primary-color-mid-copper);
+  --mat-tab-header-active-focus-label-text-color: var(--primary-color-light-copper);
+  --mat-tab-header-inactive-hover-label-text-color: var(--primary-color-light-copper);
+
+  /*Taille police label header*/
+  --mat-tab-header-label-text-size: 1rem;
+  @media screen and (min-width: 599px) {
+    --mat-tab-header-label-text-size: 1.5rem;
+  }
+  /*Icone de pagination*/
+  --mat-tab-header-pagination-icon-color : var(--primary-color-mid-copper);
+
+  /*divider*/
+  --mat-tab-header-divider-color : var(--primary-color-mid-copper);
+
+  /*stepper*/
+  --mat-stepper-header-selected-state-icon-background-color: var(--primary-color-light-copper);
+
+  /*Indicator*/
+  --mat-tab-header-active-focus-indicator-color: var(--primary-color-mid-copper);
+  --mat-tab-header-active-hover-indicator-color: var(--primary-color-mid-copper);
+  --mdc-tab-indicator-active-indicator-color: var(--primary-color-mid-copper);
+  --mdc-tab-indicator-active-indicator-height: 0.2rem;
+  --mdc-tab-indicator-active-indicator-shape: 5px;
 }
 
 mat-tab-group {
-  margin: 2em auto;
-  width: 90%;
   align-self: center;
 }
 
 img {
-  position: absolute;
-  opacity: 0.5;
+  object-fit: cover;
+  opacity: 0.2;
+  overflow: hidden;
+  mask-repeat: no-repeat;
+  z-index: -1;
 }
 
 h1, h3 {
+  font-size: 3em;
   background: var(--copper-linear-gradient);
-  background-size: 30%;
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

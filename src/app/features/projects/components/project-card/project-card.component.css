@@ -1,19 +1,29 @@
 :host {
   font-size: 1rem;
-  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
   background: var(--background-gradient);
   border: solid 1px var(--primary-color-mid-copper);
   border-radius: 2em;
-  padding: 2em;
+  padding: 1em 1.5em;
   color: var(--font-color-light);
-  width: 70%;
-  display: flex;
-  flex-direction: column;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+H4 {
+  font-size: 1.5em;
 }
 
 .gallery {
-  display: flex;
-  justify-content: center;
+  align-self: center;
 }
 
 img {
@@ -23,9 +33,10 @@ img {
 div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   img {
-    height: 3em;
+    height: 1.5em;
     width: auto;
   }
 }
