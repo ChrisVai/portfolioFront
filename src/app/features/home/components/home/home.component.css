@@ -1,6 +1,7 @@
 :host {
   font-size: 1rem;
   display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -41,3 +42,7 @@ h2 {
   }
 }
 
+app-outlined-button {
+  align-self: center;
+  margin-top: var(--margin-mobile);
+}

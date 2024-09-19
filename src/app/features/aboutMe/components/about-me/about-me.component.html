@@ -1,5 +1,8 @@
 <div class="imgWrapper">
     <img class="profilePicture" ngSrc="/aboutMeAssets/me.jpeg" fill alt="me">
 </div>
-<p [innerText]="content"></p>
+<div class="content">
+  <p [innerText]="content"></p>
+  <app-outlined-button [content]="btnContent" [routerLinkActive]="false"/>
+</div>
 <img class="backgroundImg" ngSrc="BackgroundCircleTiny.png" fill alt="geometric circle logo">
