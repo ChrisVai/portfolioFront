@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
 import {OutlinedButtonComponent} from "../../../../shared/components/outlined-button/outlined-button.component";
 import {ButtonContentModel} from "../../../../shared/models/buttonContentModel";
-import {fakeAsync} from "@angular/core/testing";
 
 @Component({
   selector: 'app-about-me',
@@ -29,5 +28,4 @@ export class AboutMeComponent {
     path: "/projects",
     routerLinkActive: false
   }
-  protected readonly fakeAsync = fakeAsync;
 }

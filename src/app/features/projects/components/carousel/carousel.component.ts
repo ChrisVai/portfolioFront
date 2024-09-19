@@ -31,6 +31,7 @@ openDialog(imgUrl: string) {
     },
   });
 }
+
   nextPicture() {
     if(this.index < this.imgUrl.length -1) {
       this.index ++;
