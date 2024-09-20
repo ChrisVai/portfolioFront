@@ -41,10 +41,9 @@ export class ProjectService {
       "projectAssets/portfolio/portfolioAboutMobile.png",
       "projectAssets/portfolio/portfolioProjectsMobile.png"
     ],
-    name: "Porfolio",
+    name: "Portfolio",
     shortDescription: "Mon portfolio",
-    fullDescription: "Réalisation de mon portfolio sous Angular 18 afin de continuer la pratique de ce framework et de rendre visible mes travaux passés." +
-      "Une partie Back sous nodeJs / Express est en cours de développement.",
+    fullDescription: "Réalisation de mon portfolio sous Angular 18 afin de continuer la pratique de ce framework et de rendre visible mes travaux passés et futurs.",
     technologies: ["Angular 18", "TypeScript", "SCSS"],
     gitHubUrl: "https://github.com/ChrisVai/portflioFront"
 }
