@@ -27,7 +27,7 @@ export class ProjectService {
     name: "projetYuzu",
     shortDescription: "Site d'affichage de news",
     fullDescription: "Création d'un site d'affichage de news sous Angular 17 avec filtres asynchrones pour s'entrainer sur RxJS. <br>Les articles ont été récupérés via une API externe.<br>" +
-      " Ce projet m'a été commandé par Yuzu en tant que test technique an vue d'une admission en stage de fin de cursus.",
+      " Ce projet m'a été commandé par Yuzu en tant que test technique en vue d'une admission en stage de fin de cursus.",
     technologies: ["Angular 17", "TypeScript", "CSS", "API REST", "RxJs"],
     gitHubUrl: "https://github.com/ChrisVai/projetYuzu"
   }
