@@ -17,7 +17,7 @@ import {AsyncPipe} from "@angular/common";
   styleUrl: './app.component.css'
 })
 export class AppComponent{
-  title: string = 'portflioFront';
+  title: string = 'portfolioFront';
   private readonly destroyRef: DestroyRef = inject(DestroyRef);
   private readonly breakpointObserver: BreakpointObserver = inject(BreakpointObserver);
   isMobile$: Observable<boolean> = this.breakpointObserver.observe([
