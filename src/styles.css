@@ -13,6 +13,7 @@ body {
 
   /*Marges mobile*/
   --margin-mobile: 7%;
+  --margin-desktop: 5%;
 
   /*palette couleurs*/
     --primary-color-light-copper: #E3B4AF;

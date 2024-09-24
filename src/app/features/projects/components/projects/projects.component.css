@@ -4,7 +4,11 @@
   display: flex;
   flex-direction: column;
   margin: var(--margin-mobile);
+  position: relative;
 
+  @media screen and (min-width: 1279px) {
+    margin: var(--margin-desktop);
+  }
   /*Mat-tab*/
   /**header
     /*Couleur police label header*/
@@ -18,6 +22,7 @@
   @media screen and (min-width: 599px) {
     --mat-tab-header-label-text-size: 1.5rem;
   }
+
   /*Icone de pagination*/
   --mat-tab-header-pagination-icon-color : var(--primary-color-mid-copper);
 
@@ -42,7 +47,7 @@ mat-tab-group {
 img {
   object-fit: cover;
   opacity: 0.2;
-  overflow: hidden;
+  overflow: visible;
   mask-repeat: no-repeat;
   z-index: -1;
 }

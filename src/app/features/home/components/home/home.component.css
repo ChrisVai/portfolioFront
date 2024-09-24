@@ -2,31 +2,27 @@
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  margin: var(--margin-mobile)
+  gap: 3em;
+  margin: var(--margin-mobile);
+  position: relative;
+  height: 100vh;
+
+  @media screen and (min-width: 1279px) {
+    margin: var(--margin-desktop);
+    gap: 5em;
+  }
 }
 
 img {
   object-fit: cover;
   opacity: 0.2;
-  overflow: hidden;
+  overflow: visible;
   mask-repeat: no-repeat;
   z-index: -1;
 }
 
-span {
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
-  margin-top: calc(var(--margin-mobile)*4);
-  @media screen and (min-width: 599px) {
-    gap: 5em;
-    margin-top: 0;
-    margin-bottom: 3%;
-  }
-}
-
 h1, h2 {
-  font-size: 4em;
+  font-size: 14vw;
   line-height: normal;
   background: var(--copper-linear-gradient);
   -webkit-background-clip: text;
@@ -39,7 +35,7 @@ h1, h2 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 7vw;
   @media screen and (min-width: 959px) {
     font-size: 4em;
   }
@@ -54,10 +50,12 @@ app-outlined-button {
 }
 
 .btnContainer {
+  height: 30vh;
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  justify-content: space-evenly;
   align-items: center;
+
   h2 {
     align-self: flex-start;
   }
