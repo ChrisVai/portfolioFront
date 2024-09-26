@@ -1,0 +1,6 @@
+main {
+  margin: var(--margin-mobile);
+  @media screen and (min-width: 1279px) {
+    margin: var(--margin-desktop);
+  }
+}

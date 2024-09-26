@@ -3,12 +3,8 @@
   color: var(--font-color-light);
   display: flex;
   flex-direction: column;
-  margin: var(--margin-mobile);
   position: relative;
 
-  @media screen and (min-width: 1279px) {
-    margin: var(--margin-desktop);
-  }
   /*Mat-tab*/
   /**header
     /*Couleur police label header*/
@@ -47,9 +43,9 @@ mat-tab-group {
 img {
   object-fit: cover;
   opacity: 0.2;
-  overflow: visible;
   mask-repeat: no-repeat;
   z-index: -1;
+  overflow: visible;
 }
 
 h1 {

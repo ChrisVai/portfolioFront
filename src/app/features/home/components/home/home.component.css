@@ -3,12 +3,10 @@
   display: flex;
   flex-direction: column;
   gap: 3em;
-  margin: var(--margin-mobile);
   position: relative;
   height: 100vh;
 
   @media screen and (min-width: 1279px) {
-    margin: var(--margin-desktop);
     gap: 5em;
   }
 }
