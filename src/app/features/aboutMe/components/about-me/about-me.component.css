@@ -1,20 +1,30 @@
 :host {
   font-size: 1rem;
   color: var(--font-color-light);
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap : 2em;
+  margin: var(--margin-mobile);
   position: relative;
 
   @media screen and (min-width: 959px) {
     flex-direction: row;
     justify-content: space-evenly;
   }
+
   @media screen and (min-width: 959px) and (orientation: portrait){
     flex-direction: column;
   }
+
+  @media screen and (min-width: 1279px) {
+    margin: var(--margin-desktop);
+  }
 }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -24,6 +34,10 @@
   border-radius: 2em;
   padding: 1.5em;
   margin-bottom: var(--margin-mobile);
+
+  @media screen and (min-width: 1279px) {
+    margin-bottom: var(--margin-desktop);
+  }
 }
 
 p {
@@ -39,9 +53,10 @@ p {
 }
 
 .backgroundImg {
+  position: fixed !important;
     object-fit: cover;
     opacity: 0.2;
-    overflow: visible;
+    overflow: hidden;
     mask-repeat: no-repeat;
     z-index: -1;
 }

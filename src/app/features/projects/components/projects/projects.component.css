@@ -1,9 +1,6 @@
 :host {
   font-size: 1rem;
   color: var(--font-color-light);
-  display: flex;
-  flex-direction: column;
-  position: relative;
 
   /*Mat-tab*/
   /**header
@@ -36,16 +33,28 @@
   --mdc-tab-indicator-active-indicator-shape: 5px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin : var(--margin-mobile);
+
+  @media screen and (min-width: 1279px) {
+    margin: var(--margin-desktop);
+  }
+}
+
 mat-tab-group {
   align-self: center;
 }
 
 img {
+  position: fixed !important;
   object-fit: cover;
   opacity: 0.2;
   mask-repeat: no-repeat;
   z-index: -1;
-  overflow: visible;
+  overflow: hidden;
 }
 
 h1 {

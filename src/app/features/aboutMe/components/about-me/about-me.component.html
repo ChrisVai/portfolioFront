@@ -1,8 +1,10 @@
-<div class="imgWrapper">
+<div class="container">
+  <div class="imgWrapper">
     <img class="profilePicture" ngSrc="aboutMeAssets/me.jpeg" fill alt="me" priority>
-</div>
-<div class="content">
-  <p [innerText]="content"></p>
-  <app-outlined-button [content]="btnContent" [routerLinkActive]="false"/>
+  </div>
+  <div class="content">
+    <p [innerText]="content"></p>
+    <app-outlined-button [content]="btnContent" [routerLinkActive]="false"/>
+  </div>
 </div>
 <img class="backgroundImg" ngSrc="BackgroundCircleTiny.png" fill alt="geometric circle logo" priority>
