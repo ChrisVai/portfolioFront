@@ -34,6 +34,7 @@
   border-radius: 2em;
   padding: 1.5em;
   margin-bottom: var(--margin-mobile);
+  backdrop-filter: blur(20px);
 
   @media screen and (min-width: 1279px) {
     margin-bottom: var(--margin-desktop);

@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   margin: 2em 0;
-  background: var(--background-gradient);
+  backdrop-filter: blur(20px);
   border: solid 1px var(--primary-color-mid-copper);
   border-radius: 2em;
   padding: 1em 1.5em;
