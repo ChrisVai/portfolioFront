@@ -50,6 +50,6 @@ export class HeaderMobileComponent {
   mail: string = "mailto:chrisbellet@gmail.com";
 
   downloadCV() {
-    window.open("CV/Christophe Bellet 2024 v1.8.pdf")
+    window.open("CV/Christophe Bellet 2024 v1.9.pdf")
   }
 }
