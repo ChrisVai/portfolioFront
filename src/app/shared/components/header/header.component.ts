@@ -52,7 +52,7 @@ export class HeaderComponent {
 
   download() {
     /*
-    Version du CV = Dev 2024 v2.0 
+    Version du CV = Dev 2024 v2.0
     */
     window.open("CV/CVChristopheBellet.pdf")
   }
