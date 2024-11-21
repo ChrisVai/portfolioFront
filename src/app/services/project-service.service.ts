@@ -46,7 +46,20 @@ export class ProjectService {
     fullDescription: "Réalisation de mon portfolio sous Angular 18 afin de continuer la pratique de ce framework et de rendre visible mes travaux passés et futurs.",
     technologies: ["Angular 18", "TypeScript", "SCSS"],
     gitHubUrl: "https://github.com/ChrisVai/portflioFront"
-}
+  }
 
-  projects: ProjectModel[] = [this.yushoot, this.projetYuzu, this.portfolio]
+  private wizards: ProjectModel = {
+    imgUrl: [
+      "projectAssets/wizards/wizards_wizards.png",
+      "projectAssets/wizards/wizards_wizardDetail.png",
+      "projectAssets/wizards/wizards_spells.png",
+    ],
+    name: "Wizards",
+    shortDescription: "Application mobile sur le thême d'Harry Potter",
+    fullDescription: "Création d'un application mobile sous Angular / Ionic affichant les sorts ainsi que les sorciers de l'univers d'Harry Potter. <br>Ce projet m'a été commandé en tant que test technique",
+    technologies: ["Angular 18", "TypeScript", "SCSS", "TailwindCSS", "Signals", "Ionic"],
+    gitHubUrl: "https://github.com/ChrisVai/Angular-ionic-WizardHp"
+  }
+
+  projects: ProjectModel[] = [this.yushoot, this.projetYuzu, this.portfolio, this.wizards]
 }
