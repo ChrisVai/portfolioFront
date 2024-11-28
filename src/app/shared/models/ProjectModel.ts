@@ -1,4 +1,5 @@
 export interface ProjectModel {
+  isInProgress : boolean;
   imgUrl?: string[];
   name: string;
   shortDescription: string;
