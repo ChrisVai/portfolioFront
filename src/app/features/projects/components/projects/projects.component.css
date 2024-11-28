@@ -44,6 +44,11 @@
   }
 }
 
+.projects {
+  width: 100%;
+  min-width: 100%;
+}
+
 mat-tab-group {
   align-self: center;
 }

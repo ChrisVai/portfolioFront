@@ -1,5 +1,11 @@
-<div>
-  <h2>{{project.name}}</h2>
+<div class="header">
+  <div class="title">
+    <h2>{{project.name}}</h2>
+    @if(project.isInProgress){
+      <p>In progress</p>
+    }
+  </div>
+
   @if(project.gitHubUrl) {
     <a [href]="project.gitHubUrl" target="_blank">
       <img ngSrc="github-mark-white.svg" alt="logo GitHub Cat" height="100" width="100">

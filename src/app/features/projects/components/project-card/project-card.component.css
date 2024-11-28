@@ -30,7 +30,7 @@ img {
   object-fit: cover;
 }
 
-div {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,6 +38,17 @@ div {
   img {
     height: 1.5em;
     width: auto;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & p {
+    border: 0.1em solid var(--primary-color-mid-copper);
+    border-radius: 0.6em;
+    text-align: center;
   }
 }
 
