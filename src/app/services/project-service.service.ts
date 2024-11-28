@@ -7,6 +7,7 @@ import {ProjectModel} from "../shared/models/ProjectModel";
 export class ProjectService {
 
   private yushoot: ProjectModel = {
+    isInProgress: false,
     imgUrl: [
       "projectAssets/yushoot/yushootDesktop.png",
       "projectAssets/yushoot/FullPage(iPad Pro).png",
@@ -20,11 +21,12 @@ export class ProjectService {
   }
 
   private projetYuzu: ProjectModel = {
+    isInProgress: false,
     imgUrl: [
       "projectAssets/projetYuzu/projetYuzuHomeTiny.png",
       "projectAssets/projetYuzu/projetYuzuArticleTiny.png"
     ],
-    name: "projetYuzu",
+    name: "ProjetYuzu",
     shortDescription: "Site d'affichage de news",
     fullDescription: "Création d'un site d'affichage de news sous Angular 17 avec filtres asynchrones pour s'entrainer sur RxJS. <br>Les articles ont été récupérés via une API externe.<br>" +
       " Ce projet m'a été commandé par Yuzu en tant que test technique en vue d'une admission en stage de fin de cursus.",
@@ -33,6 +35,7 @@ export class ProjectService {
   }
 
   private portfolio: ProjectModel = {
+    isInProgress: false,
     imgUrl: [
       "projectAssets/portfolio/portfolioHomeDesktop.png",
       "projectAssets/portfolio/portfolioAboutDesktop.png",
@@ -49,6 +52,7 @@ export class ProjectService {
   }
 
   private wizards: ProjectModel = {
+    isInProgress: false,
     imgUrl: [
       "projectAssets/wizards/wizards_wizards.png",
       "projectAssets/wizards/wizards_wizardDetail.png",
@@ -61,5 +65,27 @@ export class ProjectService {
     gitHubUrl: "https://github.com/ChrisVai/Angular-ionic-WizardHp"
   }
 
-  projects: ProjectModel[] = [this.yushoot, this.projetYuzu, this.portfolio, this.wizards]
+  private applyBack : ProjectModel = {
+    isInProgress: true,
+    imgUrl: ["projectAssets/apply/nestJs.webp",],
+    name: "apply/API",
+    shortDescription: "API REST pour apply, application de gestion de candidatures professionnelles",
+    fullDescription: "API réalisée avec NestJs(TypeScript). Authentification sécurisée via token JWT (Access et Refresh). Hashage du mot de passe et du token persistés. La gestion de la persistance des données est réalisée via TypeOrm et une BDD mysql (Docker). Le but final du projet apply est de permettre aux utilisateurs de gèrer leurs candidatures de manière centralisée et simple.",
+    technologies: ["NestJS", "TypeScript", "TypeOrm", "Passport", "Bcrypt", "JWT", "Docker", "MySql"],
+    gitHubUrl: "https://github.com/ChrisVai/apply-api",
+}
+
+private applyFront: ProjectModel = {
+  isInProgress: true,
+  imgUrl: ["projectAssets/apply/angular-logo.webp",],
+  name: "apply/IHM",
+  shortDescription: "IHM pour apply, application de gestion de candidatures professionnelles",
+  fullDescription: "Interface réactive réalisée avec Angular qui permettera de consulter, filtrer et gérer ses candidatures facilement avec une interface simple",
+  technologies: ["Angular 18", "TypeScript", "TailwindCSS", "Signals", "JWT"],
+  gitHubUrl: "https://github.com/ChrisVai/apply-front",
+}
+
+
+
+  projects: ProjectModel[] = [this.yushoot, this.projetYuzu, this.portfolio, this.wizards, this.applyBack, this.applyFront];
 }
