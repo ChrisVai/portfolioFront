@@ -20,5 +20,5 @@ import {ProjectService} from "../../../../services/project-service.service";
 export class ProjectsComponent {
 
   private readonly projectService: ProjectService = inject(ProjectService);
-  projects: ProjectModel[] = this.projectService.projects;
+  projects: ProjectModel[] = this.projectService.projects.reverse();
 }

@@ -66,11 +66,11 @@ export class ProjectService {
   }
 
   private applyBack : ProjectModel = {
-    isInProgress: true,
+    isInProgress: false,
     imgUrl: ["projectAssets/apply/nestJs.webp",],
-    name: "apply/API",
+    name: "Apply {API NestJS}",
     shortDescription: "API REST pour apply, application de gestion de candidatures professionnelles",
-    fullDescription: "API réalisée avec NestJs(TypeScript). Authentification sécurisée via token JWT (Access et Refresh). Hashage du mot de passe et du token persistés. La gestion de la persistance des données est réalisée via TypeOrm et une BDD mysql (Docker). Le but final du projet apply est de permettre aux utilisateurs de gèrer leurs candidatures de manière centralisée et simple.",
+    fullDescription: "API réalisée avec NestJS(TypeScript). Authentification sécurisée via token JWT (Access et Refresh). Hashage du mot de passe et du token persistés. La gestion de la persistance des données est réalisée via TypeOrm et une BDD mysql (Docker). Le but final du projet apply est de permettre aux utilisateurs de gèrer leurs candidatures de manière centralisée et simple. J'ai réalisé ce projet afin de découvrir NestJS et son écosystème",
     technologies: ["NestJS", "TypeScript", "TypeOrm", "Passport", "Bcrypt", "JWT", "Docker", "MySql"],
     gitHubUrl: "https://github.com/ChrisVai/apply-api",
 }
@@ -78,14 +78,23 @@ export class ProjectService {
 private applyFront: ProjectModel = {
   isInProgress: true,
   imgUrl: ["projectAssets/apply/angular-logo.webp",],
-  name: "apply/IHM",
+  name: "Apply {IHM}",
   shortDescription: "IHM pour apply, application de gestion de candidatures professionnelles",
   fullDescription: "Interface réactive réalisée avec Angular qui permettera de consulter, filtrer et gérer ses candidatures facilement avec une interface simple",
   technologies: ["Angular 18", "TypeScript", "TailwindCSS", "Signals", "JWT"],
   gitHubUrl: "https://github.com/ChrisVai/apply-front",
 }
 
+private applyAPIJava: ProjectModel = {
+  isInProgress : true,
+  imgUrl : ["projectAssets/apply/Spring-Java.webp"],
+  name: "Apply {API Java}",
+  shortDescription : "API REST sécurisée en Java (Spring) pour Apply",
+  fullDescription: "API réalisée avec Spring afin de mettre en place une connexion sécurisée Stateless et de protéger l\'accès aux ressources serveur. La gestion de la persistance est confiée à Java Persistence API et une base de données Mysql. Le but final est à terme de remplacer l'API NestJs avec une solution plus robuste techniquement et en matière de sécurité.",
+  technologies: ["Java EE", "Spring", "SpringBoot", "JPA", "SpringSecurity", "oAuth Resource Server", "Hibernate Validator", "Lombok", "Mysql", "Docker"],
+  gitHubUrl: "https://github.com/ChrisVai/ApplyAPIJava",
+}
 
 
-  projects: ProjectModel[] = [this.yushoot, this.projetYuzu, this.portfolio, this.wizards, this.applyBack, this.applyFront];
+  projects: ProjectModel[] = [this.projetYuzu, this.portfolio, this.wizards, this.yushoot,  this.applyBack, this.applyFront, this.applyAPIJava];
 }
