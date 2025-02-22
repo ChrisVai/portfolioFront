@@ -91,7 +91,7 @@ private applyAPIJava: ProjectModel = {
   name: "Apply {API Java}",
   shortDescription : "API REST sécurisée en Java (Spring) pour Apply",
   fullDescription: "API réalisée avec Spring afin de mettre en place une connexion sécurisée Stateless et de protéger l\'accès aux ressources serveur. La gestion de la persistance est confiée à Java Persistence API et une base de données Mysql. Le but final est à terme de remplacer l'API NestJs avec une solution plus robuste techniquement et en matière de sécurité.",
-  technologies: ["Java EE", "Spring", "SpringBoot", "JPA", "SpringSecurity", "oAuth Resource Server", "Hibernate Validator", "Lombok", "Mysql", "Docker"],
+  technologies: ["Java EE", "Spring", "SpringBoot", "Maven", "JPA", "SpringSecurity", "oAuth Resource Server", "Hibernate Validator", "Lombok", "Mysql", "SQL", "Docker"],
   gitHubUrl: "https://github.com/ChrisVai/ApplyAPIJava",
 }
 
