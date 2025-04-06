@@ -77,7 +77,7 @@ export class ProjectService {
 
 private applyFront: ProjectModel = {
   isInProgress: true,
-  imgUrl: ["projectAssets/apply/angular-logo.webp",],
+  imgUrl: ["projectAssets/apply/ApplyFrontHome1.jpeg", "projectAssets/apply/ApplyFrontHome2.jpeg", "projectAssets/apply/ApplyFrontHome3.jpeg", "projectAssets/apply/ApplyFrontAuth.jpeg", "projectAssets/apply/ApplyFrontCreateAccount.jpeg"],
   name: "Apply {IHM}",
   shortDescription: "IHM pour apply, application de gestion de candidatures professionnelles",
   fullDescription: "Interface réactive réalisée avec Angular qui permettera de consulter, filtrer et gérer ses candidatures facilement avec une interface simple",
@@ -96,5 +96,5 @@ private applyAPIJava: ProjectModel = {
 }
 
 
-  projects: ProjectModel[] = [this.projetYuzu, this.portfolio, this.wizards, this.yushoot,  this.applyBack, this.applyFront, this.applyAPIJava];
+  projects: ProjectModel[] = [this.projetYuzu, this.portfolio, this.wizards, this.yushoot,  this.applyBack, this.applyAPIJava, this.applyFront];
 }
