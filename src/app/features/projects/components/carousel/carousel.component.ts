@@ -1,7 +1,6 @@
 import {Component, inject, Input} from '@angular/core';
 import {NgClass, NgOptimizedImage} from "@angular/common";
 import {MatIcon} from "@angular/material/icon";
-import {OutlinedButtonComponent} from "../../../../shared/components/outlined-button/outlined-button.component";
 import {MatDialog} from "@angular/material/dialog";
 import {FullscreenDialogComponent} from "../fullscreen-dialog/fullscreen-dialog.component";
 import {MatTooltip} from "@angular/material/tooltip";
@@ -11,7 +10,6 @@ import {MatTooltip} from "@angular/material/tooltip";
     imports: [
         NgOptimizedImage,
         MatIcon,
-        OutlinedButtonComponent,
         NgClass,
         MatTooltip,
     ],

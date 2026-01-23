@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
-import {MatAnchor, MatButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
-import {MatButtonToggle} from "@angular/material/button-toggle";
 import {OutlinedButtonComponent} from "../outlined-button/outlined-button.component";
 import {RouterLink} from "@angular/router";
 import {ButtonContentModel} from "../../models/buttonContentModel";
@@ -11,10 +9,7 @@ import {ButtonContentModel} from "../../models/buttonContentModel";
     selector: 'app-header',
     imports: [
         NgOptimizedImage,
-        MatButton,
-        MatAnchor,
         MatIcon,
-        MatButtonToggle,
         OutlinedButtonComponent,
         RouterLink
     ],

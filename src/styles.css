@@ -36,10 +36,10 @@ body {
     --mat-dialog-container-max-width: 90vw;
 
   /*Mat-chip*/
-    --mdc-chip-label-text-color : var(--primary-color-light-copper);
+    --mat-chip-label-text-color : var(--primary-color-light-copper);
 
   /*Mat-button*/
-    --mdc-text-button-label-text-color: var(--primary-color-light-copper);
+    --mat-button-text-label-text-color: var(--primary-color-light-copper);
 
   /*Mat-menu*/
     --mat-menu-container-color: var(--background-dark);
