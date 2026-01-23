@@ -3,13 +3,12 @@ import {OutlinedButtonComponent} from "../../shared/components/outlined-button/o
 import {ButtonContentModel} from "../../shared/models/buttonContentModel";
 
 @Component({
-  selector: 'app-page-not-found',
-  standalone: true,
-  imports: [
-    OutlinedButtonComponent
-  ],
-  templateUrl: './page-not-found.component.html',
-  styleUrl: './page-not-found.component.css'
+    selector: 'app-page-not-found',
+    imports: [
+        OutlinedButtonComponent
+    ],
+    templateUrl: './page-not-found.component.html',
+    styleUrl: './page-not-found.component.css'
 })
 export class PageNotFoundComponent {
   btnContent: ButtonContentModel = {

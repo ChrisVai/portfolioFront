@@ -7,19 +7,18 @@ import {MatIcon} from "@angular/material/icon";
 import {ButtonContentModel} from "../../models/buttonContentModel";
 
 @Component({
-  selector: 'app-header-mobile',
-  standalone: true,
-  imports: [
-    MatMenu,
-    MatButton,
-    MatMenuTrigger,
-    MatMenuItem,
-    NgOptimizedImage,
-    RouterLink,
-    MatIcon
-  ],
-  templateUrl: './header-mobile.component.html',
-  styleUrl: './header-mobile.component.css'
+    selector: 'app-header-mobile',
+    imports: [
+        MatMenu,
+        MatButton,
+        MatMenuTrigger,
+        MatMenuItem,
+        NgOptimizedImage,
+        RouterLink,
+        MatIcon
+    ],
+    templateUrl: './header-mobile.component.html',
+    styleUrl: './header-mobile.component.css'
 })
 export class HeaderMobileComponent {
   btnContent: ButtonContentModel[] = [

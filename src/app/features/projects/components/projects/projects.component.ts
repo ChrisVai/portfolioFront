@@ -6,16 +6,15 @@ import {NgOptimizedImage} from "@angular/common";
 import {ProjectService} from "../../../../services/project-service.service";
 
 @Component({
-  selector: 'app-projects',
-  standalone: true,
-  imports: [
-    MatTab,
-    MatTabGroup,
-    ProjectCardComponent,
-    NgOptimizedImage
-  ],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+    selector: 'app-projects',
+    imports: [
+        MatTab,
+        MatTabGroup,
+        ProjectCardComponent,
+        NgOptimizedImage
+    ],
+    templateUrl: './projects.component.html',
+    styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
 

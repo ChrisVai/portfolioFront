@@ -7,17 +7,16 @@ import {FullscreenDialogComponent} from "../fullscreen-dialog/fullscreen-dialog.
 import {MatTooltip} from "@angular/material/tooltip";
 
 @Component({
-  selector: 'app-carousel',
-  standalone: true,
-  imports: [
-    NgOptimizedImage,
-    MatIcon,
-    OutlinedButtonComponent,
-    NgClass,
-    MatTooltip,
-  ],
-  templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.css'
+    selector: 'app-carousel',
+    imports: [
+        NgOptimizedImage,
+        MatIcon,
+        OutlinedButtonComponent,
+        NgClass,
+        MatTooltip,
+    ],
+    templateUrl: './carousel.component.html',
+    styleUrl: './carousel.component.css'
 })
 export class CarouselComponent {
   @Input({required: true}) imgUrl!: string[];

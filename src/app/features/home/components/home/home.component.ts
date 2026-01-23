@@ -4,14 +4,13 @@ import {OutlinedButtonComponent} from "../../../../shared/components/outlined-bu
 import {ButtonContentModel} from "../../../../shared/models/buttonContentModel";
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [
-    NgOptimizedImage,
-    OutlinedButtonComponent
-  ],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    imports: [
+        NgOptimizedImage,
+        OutlinedButtonComponent
+    ],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css'
 })
 export class HomeComponent {
   btnContent: ButtonContentModel = {

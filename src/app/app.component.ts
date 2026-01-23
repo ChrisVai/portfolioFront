@@ -10,11 +10,10 @@ import {AsyncPipe} from "@angular/common";
 
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, HeaderComponent, HomeComponent, HeaderMobileComponent, AsyncPipe],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    imports: [RouterOutlet, HeaderComponent, HomeComponent, HeaderMobileComponent, AsyncPipe],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent{
   title: string = 'portfolioFront';
