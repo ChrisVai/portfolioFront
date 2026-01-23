@@ -5,7 +5,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 3em;
   position: relative;
   margin: var(--margin-mobile);
 
@@ -58,6 +57,7 @@ app-outlined-button {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  gap: 2em;
 
   h2 {
     align-self: flex-start;
@@ -67,4 +67,15 @@ app-outlined-button {
       align-self: flex-start;
     }
   }
+}
+.ball {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*   border: 3px solid dodgerblue; */
+  background-color: dodgerblue;
+  border-radius: 50%;
+  pointer-events: none;
 }
